@@ -2,6 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  font-family: "Poppins";
+li {
+  display: inline;
 }
