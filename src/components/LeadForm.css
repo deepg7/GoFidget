@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.lead_form_bg {
+  background-color: #2742ff;
+}
+
+#lf {
+  background-color: #2742ff;
+}
+
+.leadformnexboc {
+  color: white;
+}

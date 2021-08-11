@@ -2,7 +2,7 @@ let leads = [
     {
       name:'Deep',
       email:'deep',
-      type:'motor insurance',
+      type:'Motor Insurance',
       id:1000,
       phone:'9619137724'
     },
@@ -10,7 +10,7 @@ let leads = [
       name:'Aneesh',
       email:'aneesh',
       id:1001,
-      type:'life insurance',
+      type:'Life Insurance',
       phone:'9999999999'
     }
   ]

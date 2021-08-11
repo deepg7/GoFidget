@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#viewLead {
+  background-color: #2742ff;
+  color: white;
+}
+
+#leadFormButton {
+  background-color: #0e0029;
+  border-color: white;
+  color: white;
+}
+
+.mp {
+  margin: 3px;
+  padding: 3px;
+}
