@@ -65,11 +65,11 @@ import React from 'react';
 import {Pie, Doughnut} from 'react-chartjs-2';
 
 const state = {
-  labels: ['January', 'February', 'March',
-           'April', 'May'],
+  labels: ['Deep', 'Tanmay', 'Aneesh',
+           'Prerit', 'Muazz'],
   datasets: [
     {
-      label: 'Rainfall',
+      label: 'Sales in Lakhs',
       backgroundColor: [
         '#B21F00',
         '#C9DE00',
@@ -84,22 +84,46 @@ const state = {
       '#003350',
       '#35014F'
       ],
-      data: [65, 59, 80, 81, 56]
+      data: [209, 59, 120, 81, 36]
     }
   ]
 }
 
+const state_com = {
+    labels: ['Deep', 'Tanmay', 'Aneesh',
+             'Prerit', 'Muazz'],
+    datasets: [
+      {
+        label: 'Commission in Lakhs',
+        backgroundColor: [
+          '#B21F00',
+          '#C9DE00',
+          '#2FDE00',
+          '#00A6B4',
+          '#6800B4'
+        ],
+        hoverBackgroundColor: [
+        '#501800',
+        '#4B5000',
+        '#175000',
+        '#003350',
+        '#35014F'
+        ],
+        data: [22, 8, 12, 14, 6]
+      }
+    ]
+  }
 function PieChart() {
   {
     return (
       <div>
-        <Pie
+        <Pie className="w-1/2 h-1/2"
           data={state}
           options={{
             title:{
               display:true,
-              text:'Average Rainfall per month',
-              fontSize:20
+              text:'Sales',
+              fontSize:40
             },
             legend:{
               display:true,
@@ -109,12 +133,12 @@ function PieChart() {
         />
 
         <Doughnut
-          data={state}
+          data={state_com}
           options={{
             title:{
               display:true,
-              text:'Average Rainfall per month',
-              fontSize:20
+              text:'Commission',
+              fontSize:40
             },
             legend:{
               display:true,
