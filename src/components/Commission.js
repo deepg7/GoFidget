@@ -1,12 +1,8 @@
-// import LineGraph from "./LineGraph";
-// import PieChart from "./PieChart";
-
-//<PieChart/>
-//<LineGraph/>
+import PieChart from './PieChart.js'
 function Commission(){
     return(
       <div>
-      hi
+      <PieChart/>
       </div>  
     );
 }

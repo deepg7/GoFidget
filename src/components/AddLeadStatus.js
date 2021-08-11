@@ -17,18 +17,17 @@ const submitHandler = (event) =>{
     props.onLeadStatusSubmit(leadStatus)
 
 }
-
     return(
-        <form onSubmit={submitHandler}>
-        <input type="text" placeholder="Lead Id" onChange={idChangeHandler}></input><br/>
-        <input type="text" placeholder="Updates" onChange={updateChangeHandler}></input><br/>
-        <select onChange={statusChangeHandler}>
-            <option value="Status">Select Status</option>
+        <form onSubmit={submitHandler} id ='lf' className="m-4 p-2 border-black border-2 rounded-2xl w-1/3 text-center" >
+        <input className="border-black border-2 m-2 p-2 rounded-lg" type="text" placeholder="Lead Id" onChange={idChangeHandler}></input><br/>
+        <input className="border-black border-2 m-2 p-2 rounded-lg" type="text" placeholder="Updates" onChange={updateChangeHandler}></input><br/>
+        <select className="border-black border-2 m-2 p-2 rounded-lg" onChange={statusChangeHandler}>
+            <option value="Status" disabled selected>Select Status</option>
             <option value="Open">Open</option>
             <option value="Closed">Closed</option>
         </select><br/>
-        <input type="number" onChange={saleChangeHandler} placeholder="Sale Value"></input>
-        <button type="submit">Submit Status</button>
+        <input className="border-black border-2 m-2 p-2 rounded-lg" type="number" onChange={saleChangeHandler} placeholder="Sale Value"></input><br/>
+        <button id="leadFormButton" className="mp text-white border-solid border-2 border-black rounded-md shadow-2xl" type="submit">Submit Status</button>
         </form>
     );
 }

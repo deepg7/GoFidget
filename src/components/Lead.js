@@ -15,7 +15,7 @@ function Lead(){
         <div className="text-2xl font-bold m-2 text-white">Add a new Lead</div>
         <LeadForm onLeadSubmit={leadSubmitHandler}/>
           <div className="flex flex-row flex-wrap">
-          {leadsArr.map(lead=><ViewLead name={lead.name} email={lead.email} id={lead.id} type={lead.type} phone={lead.phone} />)}
+          {leadsArr.map(lead=><ViewLead name={lead.name} email={lead.email} id={lead.id} type={lead.type} phone={lead.phone} pos_id={lead.pos_id}/>)}
           </div>
         </div>
     );

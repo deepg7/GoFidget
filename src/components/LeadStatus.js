@@ -35,7 +35,7 @@ function LeadStatus(){
         <AddLeadStatus onLeadStatusSubmit={leadStatusSubmitHandler}/>
               <div className='flex flex-row'>
                   {leadStatusArr.map(lead=>
-                    <ViewLeadStatus id={lead.id} status={lead.status} sale_value ={lead.sale_value} updates={lead.updates}/>)}
+                    <ViewLeadStatus   id={lead.id} status={lead.status} sale_value ={lead.sale_value} updates={lead.updates}/>)}
               </div>
         </div>
     );
