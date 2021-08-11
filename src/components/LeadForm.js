@@ -27,7 +27,7 @@ const submitHandler=(event)=>{
 
     return (
         <form onSubmit={submitHandler} id ='lf' className="m-4 p-2 border-black border-2 rounded-2xl w-1/3 text-center">
-        <input placeholder="POS ID" onChange={posChangeHandler} className="border-black border-2 m-2 p-2 rounded-lg"></input>
+        <input placeholder="POS ID" onChange={posChangeHandler} className="border-black border-2 m-2 p-2 rounded-lg"></input><br/>
         <input placeholder="Name" onChange={nameChangeHandler} className="border-black border-2 m-2 p-2 rounded-lg"/><br/>
         <input placeholder="Email" type='Email' onChange={emailChangeHandler} className="m-2 border-black border-2 p-2 rounded-lg"/><br/>
         <input type="number" placeholder="Phone" onChange={phoneChangeHandler} className="m-2 border-black border-2 p-2 rounded-lg"/> <br/>
